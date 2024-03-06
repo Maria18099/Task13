@@ -2,6 +2,8 @@ package org.example;
 
 import org.example.task1.*;
 import org.example.task2.HTTPUtil2;
+import org.example.task3.HttpUtil3;
+import org.example.task3.Task;
 
 import java.io.IOException;
 import java.net.URI;

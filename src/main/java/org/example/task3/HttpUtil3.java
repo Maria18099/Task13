@@ -1,4 +1,4 @@
-package org.example;
+package org.example.task3;
 
 import com.google.gson.Gson;
 

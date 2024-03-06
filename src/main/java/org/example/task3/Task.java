@@ -1,4 +1,4 @@
-package org.example;
+package org.example.task3;
 
 public class Task {
     private int userId;
