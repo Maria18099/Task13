@@ -1,6 +1,4 @@
-package org.example;
-
-import java.util.Objects;
+package org.example.task1;
 
 public class Geo {
     private double lat;
@@ -35,16 +33,4 @@ public class Geo {
         return Double.compare(lat, geo.lat) == 0 && Double.compare(lng, geo.lng) == 0;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(lat, lng);
-    }
-
-    @Override
-    public String toString() {
-        return "Geo{" +
-                "lat=" + lat +
-                ", lng=" + lng +
-                '}';
-    }
 }

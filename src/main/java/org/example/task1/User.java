@@ -1,7 +1,4 @@
-package org.example;
-
-import java.io.Serializable;
-import java.util.Objects;
+package org.example.task1;
 
 public class User {
     private int id;
@@ -13,17 +10,16 @@ public class User {
     private String website;
     private Company company;
 
-    public User(int id, String name, String username, String email, Address address, String phone, String website, Company company) {
-        this.id = id;
+    public User(String name, String username, String email, String phone, String website) {
         this.name = name;
         this.username = username;
         this.email = email;
-        this.address = address;
         this.phone = phone;
         this.website = website;
-        this.company = company;
     }
-    public User(String name, String username, String email, Address address, String phone, String website, Company company) {
+
+    public User(int id, String name, String username, String email, Address address, String phone, String website, Company company) {
+        this.id = id;
         this.name = name;
         this.username = username;
         this.email = email;
@@ -94,19 +90,6 @@ public class User {
 
     public void setCompany(Company company) {
         this.company = company;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return id == user.id && Objects.equals(name, user.name) && Objects.equals(username, user.username) && Objects.equals(email, user.email) && Objects.equals(phone, user.phone) && Objects.equals(website, user.website);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, name, username, email, phone, website);
     }
 
     @Override
